@@ -1,0 +1,77 @@
+.ai-personality-selector {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.ai-personality-selector h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.personality-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.personality-option {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.personality-option:hover {
+  background-color: #f5f5f5;
+  border-color: #d9d9d9;
+}
+
+.personality-option.selected {
+  background-color: #e6f7ff;
+  border-color: #91d5ff;
+}
+
+.personality-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.personality-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Dark theme overrides */
+body.dark .ai-personality-selector {
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark .ai-personality-selector h3 {
+  color: #f0f0f0;
+}
+
+body.dark .personality-option {
+  border-color: #444;
+}
+
+body.dark .personality-option:hover {
+  background-color: #444;
+  border-color: #555;
+}
+
+body.dark .personality-option.selected {
+  background-color: #153450;
+  border-color: #177ddc;
+}
+
+body.dark .personality-description {
+  color: #bbb;
+}

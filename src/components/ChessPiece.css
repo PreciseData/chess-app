@@ -1,0 +1,14 @@
+.chess-piece {
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.white {
+  color: #fff;
+  text-shadow: 0 0 2px #000;
+}
+
+.black {
+  color: #000;
+}

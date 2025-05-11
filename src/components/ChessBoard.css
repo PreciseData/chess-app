@@ -1,0 +1,113 @@
+.chess-board-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board-with-row-labels {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chess-board {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* Light theme (default) */
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.selected {
+  background-color: rgba(173, 216, 230, 0.7);
+}
+
+.last-move-from {
+  background-color: rgba(255, 255, 150, 0.5);
+}
+
+.last-move-to {
+  background-color: rgba(255, 255, 0, 0.5);
+}
+
+.king-in-check {
+  background-color: rgba(255, 0, 0, 0.4) !important;
+}
+
+.column-labels {
+  display: flex;
+  width: 100%;
+  padding-left: 20px;
+}
+
+.row-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  width: 20px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.column-labels .label {
+  width: 60px;
+  height: 20px;
+}
+
+/* Dark theme overrides */
+body.dark .chess-board {
+  border-color: #555;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .light {
+  background-color: #6b8e23;
+}
+
+body.dark .dark {
+  background-color: #2f4f4f;
+}
+
+body.dark .selected {
+  background-color: rgba(100, 149, 237, 0.7);
+}
+
+body.dark .last-move-from {
+  background-color: rgba(255, 215, 0, 0.3);
+}
+
+body.dark .last-move-to {
+  background-color: rgba(255, 215, 0, 0.5);
+}
+
+body.dark .label {
+  color: #ddd;
+}

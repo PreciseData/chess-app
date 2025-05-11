@@ -1,0 +1,131 @@
+.game-info {
+  width: 300px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.status-section, .history-section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.player-white {
+  color: #333;
+  font-weight: bold;
+}
+
+.player-black {
+  color: #000;
+  font-weight: bold;
+}
+
+.status-active {
+  color: green;
+}
+
+.status-check {
+  color: orange;
+}
+
+.status-checkmate, .status-stalemate, .status-timeout {
+  color: red;
+}
+
+.move-history {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.move-entry {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.move-number {
+  width: 30px;
+  font-weight: bold;
+}
+
+.white-move {
+  color: #333;
+}
+
+.black-move {
+  color: #000;
+}
+
+.special-move {
+  background-color: #f0f0f0;
+  padding: 3px 5px;
+  border-radius: 3px;
+  font-style: italic;
+}
+
+.special-move .move {
+  color: #666;
+}
+
+/* Dark theme overrides */
+body.dark .game-info {
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+body.dark h2 {
+  color: #ddd;
+  border-bottom-color: #444;
+}
+
+body.dark .player-white {
+  color: #f0f0f0;
+}
+
+body.dark .player-black {
+  color: #ccc;
+}
+
+body.dark .status-active {
+  color: #52c41a;
+}
+
+body.dark .status-check {
+  color: #faad14;
+}
+
+body.dark .status-checkmate, 
+body.dark .status-stalemate, 
+body.dark .status-timeout {
+  color: #ff4d4f;
+}
+
+body.dark .move-history {
+  border-color: #444;
+  background-color: #2a2a2a;
+}
+
+body.dark .white-move {
+  color: #f0f0f0;
+}
+
+body.dark .black-move {
+  color: #ccc;
+}
+
+body.dark .special-move {
+  background-color: #444;
+}
+
+body.dark .special-move .move {
+  color: #aaa;
+}
